@@ -115,7 +115,31 @@ namespace Queues_004
             }
             static void Main(string[] args)
             {
-
+                Program queue = new Program();
+                char ch;
+                while (true)
+                {
+                    try
+                    {
+                        Console.WriteLine("Menu");
+                        Console.WriteLine("1. Implement insert operation");
+                        Console.WriteLine("2. Implement delete operation");
+                        Console.WriteLine("3. Display values");
+                        Console.WriteLine("4. Exit");
+                        Console.Write("\nEnter your choice (1-4): ");
+                        ch = Convert.ToChar(Console.Read());
+                        Console.WriteLine();
+                        switch (ch)
+                        {
+                            case '1':
+                                {
+                                    Console.WriteLine("Enter a number: ");
+                                    int num = Convert.ToInt32(System.Console.ReadLine());
+                                    Console.WriteLine();
+                                    queue.insert(num);
+                                }
+                                break;
+                        }
             }
         }
     }
