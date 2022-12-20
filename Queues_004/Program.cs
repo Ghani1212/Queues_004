@@ -157,9 +157,15 @@ namespace Queues_004
                                 }
                                 break;
                         }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Check for the values entered. ");
+                    }
+                }
 
             }
+
         }
-    }
-    
-}
+
+    } 
