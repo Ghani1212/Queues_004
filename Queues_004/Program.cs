@@ -73,7 +73,46 @@ namespace Queues_004
                     FRONT = FRONT + 1;
 
             }
-
+            public void display()
+            {
+                int FRONT_position = FRONT;
+                int REAR_position = REAR;
+                /* Checks if the queue is empty. */
+                if (FRONT == -1)
+                {
+                    Console.WriteLine("Queue is empty\n");
+                    return;
+                }
+                Console.WriteLine("\nElement in the queue are...............\n");
+                if (FRONT_position <= REAR_position)
+                {
+                    /*traverse the queue till the last elememt present in a array. */
+                    while (FRONT_position <= REAR_position)
+                    {
+                        Console.Write(queue_array[FRONT_position] + "  ");
+                        FRONT_position++;
+                    }
+                    Console.WriteLine();
+                }
+                else
+                {
+                    /* traverses the queue till the last position of the array. */
+                    while (FRONT_position <= max - 1)
+                    {
+                        Console.Write(queue_array[FRONT_position] + "     ");
+                        FRONT_position++;
+                    }
+                    /* set the FRONT position to the first element of the array. */
+                    FRONT_position = 0;
+                    /* traverse the array till the last element present in the queue. */
+                    while (FRONT_position <= REAR_position)
+                    {
+                        Console.Write(queue_array[FRONT_position] + "      ");
+                        FRONT_position++;
+                    }
+                    Console.WriteLine();
+                }
+            }
         }
     }
     static void Main(string[] args)
