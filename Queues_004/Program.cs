@@ -139,6 +139,11 @@ namespace Queues_004
                                     queue.insert(num);
                                 }
                                 break;
+                            case '2':
+                                {
+                                    queue.remove();
+                                }
+                                break;
                         }
             }
         }
