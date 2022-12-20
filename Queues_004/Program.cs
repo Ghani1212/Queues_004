@@ -113,9 +113,11 @@ namespace Queues_004
                     Console.WriteLine();
                 }
             }
+            static void Main(string[] args)
+            {
+
+            }
         }
     }
-    static void Main(string[] args)
-    {
-    }
+    
 }
