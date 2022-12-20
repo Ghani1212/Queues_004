@@ -144,7 +144,20 @@ namespace Queues_004
                                     queue.remove();
                                 }
                                 break;
+                            case '3':
+                                {
+                                    queue.display();
+                                }
+                                break;
+                            case '4':
+                                return;
+                            default:
+                                {
+                                    Console.WriteLine("Invalid option !!");
+                                }
+                                break;
                         }
+
             }
         }
     }
